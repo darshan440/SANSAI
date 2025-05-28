@@ -142,7 +142,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.9s), transparent);
+  background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.9));
 }
 
 @layer utilities {
