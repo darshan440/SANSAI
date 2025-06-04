@@ -157,7 +157,7 @@ export default function Home() {
               Join thousands of professionals who are advancing their careers
               with AI-powered guidence.
             </p>
-            <Link href="/dashboard" passHerf>
+            <Link href="/dashboard" passHref>
               <Button
                 size="lg"
                 varient="secondary"
