@@ -1,7 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image.js";
 import Link from "next/link.js";
-import { Card, CardContent } from "../components/card";
 import HeroSection from "../components/hero.jsx";
 import {
   Accordion,
@@ -10,6 +9,7 @@ import {
   AccordionTrigger,
 } from "../components/ui/accordion";
 import { Button } from "../components/ui/button.jsx";
+import { Card, CardContent } from "../components/ui/card";
 import { faqs } from "../data/faqs";
 import { features } from "../data/features.js";
 import { howItWorks } from "../data/howItWorks";

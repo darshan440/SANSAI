@@ -30,9 +30,9 @@ export async function updateUser(data) {
               industry: data.industry,
               salaryRanges: [],
               growthRate: 0,
-              demandLevel: "medium",
+              demandLevel: "MEDIUM",
               topSkills: [],
-              marketOutlook: "Netural",
+              marketOutlook: "NETURAL",
               keyTrends: [],
               recommendedSkills: [],
               nextUpdate: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days from now
@@ -42,7 +42,7 @@ export async function updateUser(data) {
         // update  the user
         const updatedUser = await tx.user.update({
           where: {
-            id: userId,
+            clerkUserId: userId,
           },
           data: {
             industry: data.industry,
@@ -51,16 +51,17 @@ export async function updateUser(data) {
             skills: data.skills,
           },
         });
-        return updatedUser, industryInsights;
+        return { updatedUser, industryInsight };
+
       },
       {
         timeout: 10000,
       }
     );
-    return result.user;
+    return { success: true, ...result };
   } catch (error) {
     console.error("Error updating user and industry:", error.message);
-    throw new Error("Failed to update Profile");
+    throw new Error("Failed to update Profile" + error.message);
   }
 }
 

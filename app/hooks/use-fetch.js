@@ -1,10 +1,9 @@
-const { UndoIcon } = require("lucide-react");
 const { useState } = require("react");
 const { useFormState } = require("react-hook-form");
 const { toast } = require("sonner");
 
 const useFetch = (cb) => {
-  const [data, setData] = useFormState(undefined);
+  const [data, setData] = useState(null);
   const [loading, setLoading] = useState(null);
   const [error, setError] = useState(null);
   const fn = async (...args) => {
@@ -19,8 +18,10 @@ const useFetch = (cb) => {
       setError(error);
       toast.error(error.message);
     } finally {
-        setLoading(false);
+      setLoading(false);
     }
   };
   return { data, loading, error, fn, setData };
 };
+
+export default useFetch;

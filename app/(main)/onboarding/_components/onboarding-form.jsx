@@ -2,7 +2,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import {
   Card,
@@ -24,9 +24,11 @@ import { Input } from "../../../../components/ui/input";
 import { Label } from "../../../../components/ui/label";
 import { Textarea } from "../../../../components/ui/textarea";
 
+import { Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import { updateUser } from "../../../../action/user";
 import { Button } from "../../../../components/ui/button";
+import useFetch from "../../../hooks/use-fetch";
 import { onboardingSchema } from "../../../lib/schema";
 
 const OnboardingForm = ({ industries }) => {
