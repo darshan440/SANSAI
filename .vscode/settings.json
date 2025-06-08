@@ -1,4 +1,18 @@
 {
     "WillLuke.nextjs.addTypesOnSave": true,
-    "WillLuke.nextjs.hasPrompted": true
-}
+    "WillLuke.nextjs.hasPrompted": true,
+    
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact",
+      "typescript": "typescriptreact"
+    },
+    "emmet.syntaxProfiles": {
+      "javascript": "jsx",
+      "typescript": "tsx"
+    },
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.tabCompletion": "onlySnippets"
+  }
+  
