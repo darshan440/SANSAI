@@ -1,5 +1,5 @@
-import { getAssessments } from "@/actions/interview";
-import PerformanceChart from "./_components/performace-chart";
+import { getAssessments } from "../../../action/interview";
+import PerformanceChart from "./_components/performence-chart";
 import QuizList from "./_components/quiz-list";
 import StatsCards from "./_components/stats-cards";
 

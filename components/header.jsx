@@ -42,7 +42,7 @@ const Header = async () => {
             </Link>
 
             <DropdownMenu>
-              <DropdownMenuTrigger>
+              <DropdownMenuTrigger asChild>
                 <Button>
                   <StarIcon className="h-4 w-4" />
                   <span className="hidden md:block">Growth Tools </span>
