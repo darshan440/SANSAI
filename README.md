@@ -57,9 +57,9 @@ Sansai is an AI-powered full-stack career assistant web app designed to supercha
 
 ## 📸 Preview
 
-| Dashboard | Resume Builder | Interview |
+| OG image | Dashboard | Resume Builder | Interview | 
 |----------|----------------|-----------|
-| ![preview-1](public/preview.png) | ![preview-2](public/preview-2.png) | ![preview-3](public/preview-3.png) |
+| ![preview-1](public/preview.png) | ![preview-2](public/preview-2.png) | ![preview-3](public/preview-3.png) |![preview-4](public/preview-4.png) |
 
 ---
 
