@@ -22,7 +22,7 @@ export const metadata = {
     siteName: "Sansai",
     images: [
       {
-        url: "/preview.png",
+        url: "https://sansai-ten.vercel.app/preview.png",
         width: 1200,
         height: 630,
         alt: "Sansai Preview",
@@ -35,7 +35,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Sansai – AI Career Coach",
     description: "AI-powered platform for resume building and interview prep.",
-    images: ["/preview.png"],
+    images: ["https://sansai-ten.vercel.app/preview.png"],
   },
 };
 
