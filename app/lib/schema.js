@@ -58,7 +58,7 @@ export const entrySchema = z
 export const resumeSchema = z.object({
   contactInfo: contactSchema,
   summary: z.string().min(1, "Proffessional summary is required "),
-  skill: z.string().min(1, "skill are required"),
+  skills: z.string().min(1, "skill are required"),
   experience: z.array(entrySchema),
   education: z.array(entrySchema),
   projects: z.array(entrySchema),

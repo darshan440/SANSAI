@@ -24,11 +24,15 @@
     ]
   },
   "include": [
-    "next-env.d.ts",
+   "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "app/[[...sign-in]]/page.jsx", "app/sign-in/page.jsx"  ],
+    "**/*.tsx",
+    "src",
+    "src/types",
+    "app/[[...sign-in]]/page.jsx",
+    "app/sign-in/page.jsx"
+  ],
   "exclude": [
     "node_modules"
   ]
